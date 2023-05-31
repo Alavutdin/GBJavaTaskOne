@@ -8,9 +8,33 @@ import static java.util.Arrays.*;
 
 public class Test {
     public static void main(String[] args) {
-        String str = "mama   zlobno   myla    puzzle  and    ramy   ";
-        String str2 = "mama";
-        StringBuilder sb = new StringBuilder(str);
+        Scanner scan = new Scanner(System.in);
+        String str = scan.nextLine();
+        StringBuilder res = new StringBuilder();
+        int summa = 0;
+        for (int i = 0; i < str.length(); i++) {
+            if (str.charAt(i) >= '0' &&  str.charAt(i) <= '9'){
+                summa += str.charAt(i) - '0';
+                res.append(str.charAt(i)).append('+');
+            }
+        }
+        if (!res.isEmpty()) {
+            res.replace(res.length() - 1, res.length(), "=");
+            res.append(summa);
+            System.out.println(res);
+        } else {
+            System.out.println("ERROR");
+        }
+    }
+
+        //put your code here
+    }
+
+
+//    public static void main(String[] args) {
+//        String str = "mama   zlobno   myla    puzzle  and    ramy   ";
+//        String str2 = "mama";
+//        StringBuilder sb = new StringBuilder(str);
 //        StringBuilder [] sb2=0;
 //        String s = String.format("a=%1$d", 10);
 //        System.out.println(s);
@@ -40,8 +64,8 @@ public class Test {
 //        String delimiter = " ";
 //        String joined = String.join(delimiter, words);
 //        System.out.print(joined);
-    }
-}
+
+
 
 //        Scanner scan = new Scanner(System.in);
 //        //String text = scan.nextLine();
