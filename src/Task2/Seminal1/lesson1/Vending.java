@@ -2,7 +2,7 @@ package Task2.Seminal1.lesson1;
 
 import java.util.*;
 
-public class Vending {
+public abstract class Vending {
     /**
      * Первый метод ArrayList<>()
      * Метод add

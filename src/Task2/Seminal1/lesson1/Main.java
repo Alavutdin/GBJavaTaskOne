@@ -21,7 +21,7 @@ package Task2.Seminal1.lesson1;
 public class Main {
     public static void main(String[] args) {
 
-        Vending vending = new FruitVending();
+//        Vending vending = new FruitVending();
 
         Product product1 = new Apple("Apple", 20);
         Product product2 = new Orange("Orange", 30);
@@ -29,24 +29,24 @@ public class Main {
 ////        product1.name = "Apple";
 //
 //
-        vending.addProduct(product1);
-        vending.addProduct(product2);
-        vending.addProduct(product3);
-
-
-        System.out.println(vending.getProduct("Apple"));
-        System.out.println(vending.getProduct("Orange"));
-        System.out.println(vending.getProduct("Banana"));
-
-        System.out.println(vending.getProduct(20));
-        System.out.println(vending.getProduct(25));
-        System.out.println(vending.getProduct(50));
-
-        //System.out.println(vending.getProduct(50));
-
-        Product product4=new HotDrinks("Peach",40,50);
-
-        System.out.println(vending.getProduct(50));
+//        vending.addProduct(product1);
+//        vending.addProduct(product2);
+//        vending.addProduct(product3);
+//
+//
+//        System.out.println(vending.getProduct("Apple"));
+//        System.out.println(vending.getProduct("Orange"));
+//        System.out.println(vending.getProduct("Banana"));
+//
+//        System.out.println(vending.getProduct(20));
+//        System.out.println(vending.getProduct(25));
+//        System.out.println(vending.getProduct(50));
+//
+//        //System.out.println(vending.getProduct(50));
+//
+//        Product product4=new HotDrinks("Peach",40,50);
+//
+//        System.out.println(vending.getProduct(50));
 
     }
 }
