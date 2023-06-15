@@ -89,11 +89,12 @@ public class User {
     }
 
     protected boolean canEqual(Object other) {
+
         return other instanceof User;
     }
 
     public int hashCode() {
-        int PRIME = true;
+        //int PRIME = true;
         int result = 1;
         Object $id = this.getId();
         result = result * 59 + ($id == null ? 43 : $id.hashCode());
